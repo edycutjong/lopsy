@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { lopsyService } from "@/lib/lpagent";
 
-// Mock Data
-const MOCK_POSITIONS = [
+// Initial data
+const INITIAL_POSITIONS = [
   {
     id: "pos_1",
     pool: "SOL-USDC",
@@ -71,7 +71,7 @@ export default function LopsyDashboard() {
         <section>
           <h2 className="text-xl font-semibold mb-4 text-brand-muted uppercase tracking-wider">Active Threat Vectors (Impermanent Loss)</h2>
           <div className="grid gap-4">
-            {MOCK_POSITIONS.filter(p => p.status === 'active').map((pos) => {
+            {INITIAL_POSITIONS.filter(p => p.status === 'active').map((pos) => {
               const isZapping = zapStatus[pos.id] === 'zapping';
               const isZapped = zapStatus[pos.id] === 'zapped';
               
@@ -160,7 +160,7 @@ export default function LopsyDashboard() {
                  </tr>
                </thead>
                <tbody className="divide-y divide-brand-border">
-                 {MOCK_POSITIONS.filter(p => p.status === 'closed').map(pos => (
+                 {INITIAL_POSITIONS.filter(p => p.status === 'closed').map(pos => (
                    <tr key={pos.id} className="hover:bg-brand-surface/30 transition-colors">
                      <td className="p-4 font-bold">{pos.pool}</td>
                      <td className="p-4 text-brand-muted">{pos.dex}</td>
