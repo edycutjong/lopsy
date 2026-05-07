@@ -1,5 +1,8 @@
 "use client";
 
+import { StatusBar } from "@/components/StatusBar";
+import { Footer } from "@/components/Footer";
+
 import { useState } from "react";
 import { lopsyService } from "@/lib/lpagent";
 
@@ -50,6 +53,8 @@ export default function LopsyDashboard() {
   };
 
   return (
+    <>
+      <StatusBar />
     <div className="min-h-screen p-8 max-w-6xl mx-auto space-y-8">
       <header className="flex justify-between items-center pb-6 border-b border-brand-border">
         <div>
@@ -179,5 +184,7 @@ export default function LopsyDashboard() {
         </section>
       </main>
     </div>
+      <Footer />
+    </>
   );
 }
