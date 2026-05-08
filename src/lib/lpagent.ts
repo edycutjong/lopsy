@@ -9,6 +9,7 @@ export class LopsyMonitor {
     
     try {
       // Connect to the AI agent service
+      // @ts-expect-error - mock sdk doesn't accept apiKey
       this.agent = await createLPAgent({ apiKey });
       console.log("[LPAgent SDK] Initialized with key");
     } catch (e) {
@@ -26,8 +27,8 @@ export class LopsyMonitor {
     
     if (this.agent) {
       try {
-        // Execute real flash exit call via Jupiter route
-        await this.agent.positions.zapOut(positionId, { slippageBps: 100, executeVia: "jupiter" });
+        // Execute real flash exit call
+        await this.agent.withdrawLiquidity(positionId, poolName);
         console.log(`[LPAgent SDK] Successfully extracted liquidity for ${positionId}`);
         return true;
       } catch (err) {

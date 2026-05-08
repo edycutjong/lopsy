@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 
 import { useState } from "react";
 import { lopsyService } from "@/lib/lpagent";
+import { HeroLanding } from "@/components/HeroLanding";
 
 // Initial data
 const INITIAL_POSITIONS = [
@@ -43,7 +44,17 @@ const INITIAL_POSITIONS = [
   }
 ];
 
-export default function LopsyDashboard() {
+export default function Page() {
+  const [hasEntered, setHasEntered] = useState(false);
+
+  if (!hasEntered) {
+    return <HeroLanding onEnter={() => setHasEntered(true)} />;
+  }
+
+  return <LopsyDashboard />;
+}
+
+function LopsyDashboard() {
   const [zapStatus, setZapStatus] = useState<Record<string, 'idle' | 'zapping' | 'zapped'>>({});
 
   const handleZapOut = async (id: string, poolName: string) => {
