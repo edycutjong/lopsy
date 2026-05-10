@@ -3,11 +3,7 @@
 import { useEffect, useState } from "react";
 
 export function HeroLanding({ onEnter }: { onEnter: () => void }) {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const [mounted] = useState(() => typeof window !== 'undefined');
 
   if (!mounted) return null;
 
