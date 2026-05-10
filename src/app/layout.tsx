@@ -15,6 +15,20 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Lopsy | Emergency LP Monitor",
   description: "Closed position forensics and emergency Zap-Out for LP positions.",
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-icon.png",
+  },
+  openGraph: {
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Lopsy | Emergency LP Monitor",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

@@ -5,7 +5,9 @@ import { Footer } from "@/components/Footer";
 
 import { useState } from "react";
 import { lopsyService } from "@/lib/lpagent";
-import { HeroLanding } from "@/components/HeroLanding";
+import dynamic from "next/dynamic";
+
+const HeroLanding = dynamic(() => import("@/components/HeroLanding").then(mod => mod.HeroLanding), { ssr: false });
 
 // Initial data
 const INITIAL_POSITIONS = [

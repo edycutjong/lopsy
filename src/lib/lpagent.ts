@@ -12,7 +12,7 @@ export class LopsyMonitor {
       // @ts-expect-error - mock sdk doesn't accept apiKey
       this.agent = await createLPAgent({ apiKey });
       console.log("[LPAgent SDK] Initialized with key");
-    } catch (_e) {
+    } catch {
       console.warn("[LPAgent SDK] Failed to initialize real SDK, falling back to read-only.");
     }
     

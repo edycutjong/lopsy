@@ -1,11 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 export function HeroLanding({ onEnter }: { onEnter: () => void }) {
-  const [mounted] = useState(() => typeof window !== 'undefined');
-
-  if (!mounted) return null;
 
   return (
     <div className="relative min-h-screen bg-brand-bg flex flex-col items-center justify-center overflow-hidden">
