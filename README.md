@@ -5,10 +5,10 @@
   
   <br/>
 
-  [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://lopsy.edycu.dev)
-  [![Pitch Deck](https://img.shields.io/badge/Pitch-Deck-f59e0b.svg)](https://lopsy.edycu.dev/pitch)
-  [![Pitch Video](https://img.shields.io/badge/Pitch-Video-red.svg)](https://youtube.com/your-video)
-  [![Superteam Earn](https://img.shields.io/badge/Superteam-Earn_Listing-blue.svg)](https://superteam.fun/earn/listing/lpagentio-or-api-integrate-sidetrack)
+  [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg?style=for-the-badge)](https://lopsy.edycu.dev)
+  [![Pitch Deck](https://img.shields.io/badge/Pitch-Deck-f59e0b.svg?style=for-the-badge)](https://lopsy.edycu.dev/pitch)
+  [![Pitch Video](https://img.shields.io/badge/Pitch-Video-red.svg?style=for-the-badge)](https://youtube.com/your-video)
+  [![Superteam Earn](https://img.shields.io/badge/Superteam-Earn_Listing-blue.svg?style=for-the-badge)](https://superteam.fun/earn/listing/lpagentio-or-api-integrate-sidetrack)
 
   <br/>
 
@@ -17,7 +17,7 @@
   ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
   ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
   ![LPAgent](https://img.shields.io/badge/LPAgent-000000?style=flat&logo=solana&logoColor=white)
-  ![Vitest](https://img.shields.io/badge/Vitest-FCC72B?style=flat&logo=vitest&logoColor=white)
+  [![CI Passing](https://github.com/edycutjong/lopsy/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/lopsy/actions/workflows/ci.yml)
 </div>
 
 ---
