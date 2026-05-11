@@ -7,7 +7,7 @@
 
   [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg?style=for-the-badge)](https://lopsy.edycu.dev)
   [![Pitch Deck](https://img.shields.io/badge/Pitch-Deck-f59e0b.svg?style=for-the-badge)](https://lopsy.edycu.dev/pitch)
-  [![Pitch Video](https://img.shields.io/badge/Pitch-Video-red.svg?style=for-the-badge)](https://youtube.com/your-video)
+  [![Pitch Video](https://img.shields.io/badge/Pitch-Video-red.svg?style=for-the-badge)](https://youtu.be/zvrVIQc-Co4)
   [![Superteam Earn](https://img.shields.io/badge/Superteam-Earn_Listing-blue.svg?style=for-the-badge)](https://superteam.fun/earn/listing/lpagentio-or-api-integrate-sidetrack)
 
   <br/>
@@ -25,7 +25,7 @@
 ## 📸 See it in Action
 
 
-[**▶️ Watch the Demo Video**](https://youtube.com/your-video)
+[**▶️ Watch the Demo Video**](https://youtu.be/zvrVIQc-Co4)
 
 <div align="center">
   <img src="public/og-image.png" alt="App Demo" width="100%">
